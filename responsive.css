@@ -1,0 +1,343 @@
+@media (min-width:601px) and (max-width:1008px) {
+    .home{
+       
+        overflow: hidden;
+        height: 1000px;
+    }
+    nav{
+        margin-top: 5px;
+       height: 50px;
+       width: 50px;
+       
+    }
+    nav .logo,
+    nav a{
+        display: none;
+    }
+    nav .btn-nav{
+        display: block;
+    }
+    #click:checked ~ ul
+    {
+        left: 0%;
+    }
+    nav input{
+        display: none;
+    }
+    nav label i{
+        font-size: 35px;
+        background-color: blue;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    nav label i:hover{
+        cursor: pointer;
+        border: 2px solid white;
+    }
+    nav ul{
+        display: block;
+        position: fixed;
+        top: 51px;
+        left: -100%;
+        background-color:transparent;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        transition: all 0.5s ;
+        
+    }
+    nav ul li a{
+        display: block;
+        text-decoration: none;
+        padding: 10px 10px;
+        border-radius: 0px 20px 20px 0px;
+        background-color: rgba(0, 0, 255, 0.466);
+        text-transform: capitalize;
+        font-weight: 800;
+        transition: all 0.3s;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+        border: 3px solid white;
+        
+        
+    }
+    nav ul li{
+        display: block;
+        width: 100%;
+        
+    }
+    nav ul li a:hover{
+        background-color: none;
+        border-top: none;
+        border: 3px solid white;
+        transform: translateX(10px);
+    }
+    nav ul li .avtive-btn{
+        background-color: rgba(0, 0, 255, 0.466);
+        border-top: 3px solid white;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    body .home .container .text{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+}
+
+
+/******media 600px ********/
+
+
+
+@media (max-width:600px) {
+    body .home{
+       
+        overflow: hidden;
+        height: 1000px;
+    }
+    nav{
+        display: none;
+    }
+
+    body .home .container .text{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    body .home .container .text h1{
+        font-size: 30px;
+    }
+    /****** الصورة*****/
+    .home .container .img{
+        background-color: aqua;
+        height: 500px;
+        width: 300px;
+        background-image: url(photo/ppp.jpg);
+        border-radius: 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: inset 10px 10px 20px white ;
+        position: relative;
+    }
+    .home .container .img::after{
+        content: "";
+        width: 20px;
+        height: 20px;
+        z-index: 1;
+        position: absolute;
+        bottom: -20px;
+        right: -20px;
+        border-right: 5px solid blue;
+        border-bottom: 5px solid blue;
+    }
+    .home .container .img::before{
+        content: "";
+        width: 20px;
+        height: 20px;
+        z-index: 1;
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        border-top: 5px solid blue;
+        border-left: 5px solid blue;
+    }
+    
+
+    .home .container .img .img1{
+        display: none;
+    }
+    .home .container .img .img2{
+       display: none;
+  
+    }
+    /******الصورة*****/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media (min-width:451px) and (max-width:1014px) {
+    
+
+    body .home .container .text{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    body .home .container .text h1{
+        font-size: 30px;
+    }
+    .home .container .img .img1{
+        width: 500px ;
+        height: 500px ;
+        position: static;
+        
+        
+    }
+    .home .container .img .img2{
+        width: 350px;
+        height: 350px;
+        
+        margin-left: 8%;
+        
+        
+        
+    }
+    .home .container .img{
+        display: flex;
+        
+        justify-content: center;
+        
+    }
+    .home{
+        overflow: hidden;
+        height: 780px;
+        
+    }
+   
+}*/
+/*@media (min-width:481px) and (max-width:610px) {
+    .home .container .img .img2{
+        width: 300px;
+        height: 300px;
+        
+        margin-left: 2%;
+        
+        
+        
+    }
+}
+@media (max-width:480px){
+    .home{
+        overflow: hidden;
+        height: 680px;
+        
+    }
+    .home .container{
+        overflow: hidden;
+        
+    }
+    body .home .container .text{
+        
+        width: 100%;
+    }
+    body .home .container .text{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    body .home .container .text h1{
+        font-size: 30px;
+    }
+    .home .container .img{
+        margin-top: 10px;
+        height: 55%;
+        
+        width: 100%;
+    }
+    .home .container .img .img1{
+        width: 400px ;
+        height: 400px ;
+        
+    }
+    .home .container .img .img2{
+        width: 250px;
+        height: 250px;
+        left: 70px;
+        transform: translateY(65px);
+        
+    }
+}
+/* responsive.css */
+/*......................................*/
+    /*body .home{
+       
+        overflow: hidden;
+        height: 900px;
+    }
+    body .home .container{
+        
+    }
+    body .home .container .text{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    body .home .container .text h1{
+        font-size: 30px;
+    }
+    .home .container .img .img1{
+        width:600px ;
+        height: 600px ;
+    }
+    .home .container .img .img2{
+        background-image: url(photo/ppp.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 480px;
+        height: 480px;
+        top: 7%;
+        left: 10%;
+        border-radius: 50%;
+        transform: translateY(0px);
+    }
+}
+
+
